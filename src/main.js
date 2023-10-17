@@ -13,6 +13,7 @@ import Column from 'primevue/column'
 import ColumnGroup from 'primevue/columngroup' // optional
 import Row from 'primevue/row'
 import InputText from 'primevue/inputtext'
+import Carousel from 'primevue/carousel';
 
 const app = createApp(App)
 app.use(PrimeVue)
@@ -23,6 +24,7 @@ app.component('Column', Column)
 app.component('ColumnGroup', ColumnGroup)
 app.component('Row', Row)
 app.component('InputText', InputText)
+app.component('Carousel', Carousel )
 
 app.use(router)
 
