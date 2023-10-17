@@ -1,41 +1,59 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <header>
+      <div class="flex">
+        <img alt="Vue logo" class="logo flex" src="@/assets/livro.png" width="125" height="125" clas/>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <h1 class="flex mt-5 text-4xl text-center align-middle">BiBlioteca</h1>
+      </div>
+      <div class="wrapper">
+        <HelloWorld msg="You did it!" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/livros">Livros</RouterLink>
+          <RouterLink to="/alugar">Alugar</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <main>
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <style scoped>
+#app {
+  width: 100vw; /* 100% da largura da janela do navegador */
+  height: 100vh; /* 100% da altura da janela do navegador */
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  text-align: center;
+  padding: 1rem;
+  background-color: #333; /* Cor de fundo da barra de navegação */
+  color: white;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  margin: 0 0 0 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 nav a.router-link-exact-active {
@@ -56,30 +74,10 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+main {
+  flex: 1; /* Preenche a altura restante */
+  max-width: 100%;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 </style>
