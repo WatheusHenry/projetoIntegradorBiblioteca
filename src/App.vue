@@ -1,11 +1,17 @@
 <template>
   <div id="app">
     <header>
-      <div class="flex">
+      <div class="flex justify-between">
+      <div class="inline-flex">
         <img alt="Vue logo" class="logo flex" src="@/assets/livro.png" width="125" height="125" clas/>
 
         <h1 class="flex mt-5 text-4xl text-center align-middle">BiBlioteca</h1>
       </div>
+      <div class="inline-flex gap-2">
+        <RouterLink class="h-10" to="/login">Login</RouterLink>
+        <RouterLink class="h-10" to="/registro">Registro</RouterLink>
+      </div>
+    </div> 
       <div class="wrapper">
         <HelloWorld msg="You did it!" />
 

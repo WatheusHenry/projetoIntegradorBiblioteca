@@ -41,7 +41,9 @@ import { ref } from 'vue'
 export default {
   setup() {
     const email = ref('')
+    const nome = ref('')
     const senha = ref('')
+    const repetirsenha = ref('')
 
     const login = () => {
       // Lógica de autenticação aqui
