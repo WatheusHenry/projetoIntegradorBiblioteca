@@ -2,23 +2,36 @@
   <div id="app">
     <header>
       <div class="flex justify-between">
-      <div class="inline-flex">
-        <img alt="Vue logo" class="logo flex" src="@/assets/livro.png" width="125" height="125" clas/>
+        <div class="inline-flex mx-5 mt-3">
+          <img
+            alt="Vue logo"
+            class="logo flex"
+            src="@/assets/livro.png"
+            width="80"
+            height="80"
+            clas
+          />
 
-        <h1 class="flex mt-5 text-4xl text-center align-middle">BiBlioteca</h1>
+          <h1 class="flex text-6xl">BiBlioteca</h1>
+        </div>
+        <div class="inline-flex gap-5 mt-4 mr-5 h-12">
+          <RouterLink
+            class="btn bg-green-400 p-2 px-4 text-xl font-bold hover:bg-green-500 inline-flex"
+            to="/login"
+            >Login</RouterLink
+          >
+          <RouterLink
+            class="btn bg-green-400 p-2 px-4 text-xl font-bold hover:bg-green-500"
+            to="/registro"
+            >Registro</RouterLink
+          >
+        </div>
       </div>
-      <div class="inline-flex gap-2">
-        <RouterLink class="h-10" to="/login">Login</RouterLink>
-        <RouterLink class="h-10" to="/registro">Registro</RouterLink>
-      </div>
-    </div> 
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/livros">Livros</RouterLink>
-          <RouterLink to="/alugar">Alugar</RouterLink>
+      <div class="flex justify-center">
+        <nav class="bg-gray-700 rounded p-2 px-5 gap-5">
+          <RouterLink class="px-5 p-1 rounded" to="/">Home</RouterLink>
+          <RouterLink to="/livros" class="px-5 p-1 rounded">Livros</RouterLink>
+          <RouterLink to="/alugar" class="px-5 p-1 rounded">Alugar</RouterLink>
         </nav>
       </div>
     </header>
@@ -31,7 +44,7 @@
 
 <style scoped>
 #app {
-  width: 100vw; /* 100% da largura da janela do navegador */
+ /* 100% da largura da janela do navegador */
   height: 100vh; /* 100% da altura da janela do navegador */
   display: flex;
   flex-direction: column;
@@ -39,8 +52,8 @@
 
 header {
   text-align: center;
-  padding: 1rem;
-  background-color: #333; /* Cor de fundo da barra de navegação */
+  padding:1rem 0px ;
+  background-color: rgb(31 41 55); /* Cor de fundo da barra de navegação */
   color: white;
 }
 
@@ -81,9 +94,7 @@ nav a:first-of-type {
 }
 
 main {
-  flex: 1; /* Preenche a altura restante */
   max-width: 100%;
-  padding: 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 </style>

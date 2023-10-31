@@ -1,26 +1,29 @@
 <template>
-  <div class="p-grid p-fluid">
-    <div class="p-col-12">
-      <h1>Biblioteca</h1>
+  <div class="">
+    <div class="text-center py-5">
+      <h1 class="text-5xl">Destaques</h1>
     </div>
 
-    <div class="p-col-12 p-md-4" v-for="book in books" :key="book.id">
-      <div class="book-card flex">
-        <div class="book-cover">
-          <img :src="book.cover" alt="Capa do livro" />
-        </div>
-        <div class="book-details">
-          <h3>{{ book.title }}</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra dui nec dolor
-            porta, at imperdiet ante vehicula. Aenean finibus purus a nisl gravida fermentum.
-            Integer dapibus euismod tortor et sodales. Pellentesque lectus ligula, suscipit quis
-            lorem ac, vulputate vestibulum augue. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas. In faucibus ipsum sed nisi mollis, non
-            bibendum dui auctor.
-          </p>
-          <p>{{ book.author }}</p>
-          <p>{{ book.published }}</p>
+    <div class="grid grid-cols-3 w-[80%] gap-5 p-5">
+      <div class="inline-flex justify-center" v-for="book in books" :key="book.id">
+        <div class="card" style="width: 18rem">
+          <img :src="book.cover" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h2 class="text-3xl">{{ book.title }}</h2>
+            <p class="card-text">
+              {{ book.author }}
+            </p>
+            <p class="card-text">
+              {{ book.published }}
+            </p>
+            <div class="flex justify-center mt-3">
+              <a
+                href="#"
+                class="btn text-2xl font-bold bg-green-400 hover:bg-green-500 focus:outline-none focus:ring focus:ring-violet-300 focus:bg-green-500 text-white"
+                >Alugar</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +46,13 @@ export default {
           id: 2,
           title: 'Livro 2',
           author: 'Autor 2',
+          published: '2022',
+          cover: 'src/assets/260620.jpg'
+        },
+        {
+          id: 3,
+          title: 'Livro 3',
+          author: 'Autor 3',
           published: '2022',
           cover: 'src/assets/260620.jpg'
         }
