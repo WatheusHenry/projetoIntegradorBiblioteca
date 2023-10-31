@@ -1,12 +1,15 @@
 <template>
   <div class="">
-    <div class="text-center py-5">
-      <h1 class="text-5xl">Livros</h1>
+    <div class="flex justify-center text-center py-4">
+      <h1 class="text-3xl font-bold">Livros</h1>
     </div>
-    <div class="grid grid-cols-4 gap-5 p-5">
+    <div class="flex justify-end text-center">
+      <button class="btn bg-green-700 m-auto">Adicionar Livro</button>
+    </div>
+    <div class="grid grid-cols-4 gap-5 m-auto bg-slate-200 rounded-md shadow-sm w-[70%] p-5">
       <div class="inline-flex justify-center" v-for="book in books" :key="book.id">
-        <div class="card " style="width: 15rem">
-          <img :src="book.cover" class="card-img-top "  alt="..." />
+        <div class="card" style="width: 15rem">
+          <img :src="book.cover" class="card-img-top" alt="..." />
           <div class="card-body">
             <h2 class="text-3xl">{{ book.title }}</h2>
             <p class="card-text">

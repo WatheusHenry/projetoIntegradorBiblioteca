@@ -12,47 +12,49 @@
             clas
           />
 
-          <h1 class="flex text-6xl">BiBlioteca</h1>
+          <h1 class="flex text-5xl">BiBlioteca</h1>
         </div>
-        <div class="inline-flex gap-5 mt-4 mr-5 h-12">
-          <RouterLink
-            class="btn bg-green-400 p-2 px-4 text-xl font-bold hover:bg-green-500 inline-flex"
+        <div class="inline-flex gap-4 mt-4 mr-5 h-10">
+          <!-- <RouterLink
+            class="btn bg-green-400 p-1 px-4 text-md font-bold hover:bg-green-500 inline-flex"
             to="/login"
             >Login</RouterLink
           >
           <RouterLink
-            class="btn bg-green-400 p-2 px-4 text-xl font-bold hover:bg-green-500"
+          class="btn bg-green-400 p-1 px-4 text-md font-bold hover:bg-green-500 inline-flex"
             to="/registro"
             >Registro</RouterLink
-          >
+          > -->
+          <nav class="bg-gray-700 rounded p-1 px-4 gap-5">
+            <RouterLink class="px-5 p-1 rounded" to="/">Home</RouterLink>
+            <RouterLink to="/livros" class="px-5 p-1 rounded">Livros</RouterLink>
+            <RouterLink to="/alugar" class="px-5 p-1 rounded">Alugar</RouterLink>
+          </nav>
         </div>
       </div>
-      <div class="flex justify-center">
-        <nav class="bg-gray-700 rounded p-2 px-5 gap-5">
-          <RouterLink class="px-5 p-1 rounded" to="/">Home</RouterLink>
-          <RouterLink to="/livros" class="px-5 p-1 rounded">Livros</RouterLink>
-          <RouterLink to="/alugar" class="px-5 p-1 rounded">Alugar</RouterLink>
-        </nav>
-      </div>
+      <div class="flex justify-center"></div>
     </header>
 
     <main>
       <RouterView />
     </main>
+    <footer class="bottom-0 w-full h-20 bg-slate-700 mt-5">
+      dasdsa
+    </footer>
   </div>
 </template>
 
 <style scoped>
 #app {
- /* 100% da largura da janela do navegador */
-  height: 100vh; /* 100% da altura da janela do navegador */
+  /* 100% da largura da janela do navegador */
+  font-family: Inter;
   display: flex;
   flex-direction: column;
 }
 
 header {
   text-align: center;
-  padding:1rem 0px ;
+  padding: 1rem 0px;
   background-color: rgb(31 41 55); /* Cor de fundo da barra de navegação */
   color: white;
 }
@@ -95,6 +97,7 @@ nav a:first-of-type {
 
 main {
   max-width: 100%;
+  max-height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 </style>
