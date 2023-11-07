@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <div class="flex justify-center text-center py-4">
+    <div class="flex justify-center text-center pt-4">
       <h1 class="text-3xl font-bold">Livros</h1>
     </div>
-    <div class="flex justify-end text-center">
+    <div class="flex justify-end text-center my-5">
       <button class="btn bg-green-700 m-auto">Adicionar Livro</button>
     </div>
     <div class="grid grid-cols-4 gap-5 m-auto bg-slate-200 rounded-md shadow-sm w-[70%] p-5">
@@ -42,63 +42,63 @@ export default {
           title: 'Livro 1',
           author: 'Autor 1',
           published: '2023',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 1,
           title: 'Livro 1',
           author: 'Autor 1',
           published: '2023',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 1,
           title: 'Livro 1',
           author: 'Autor 1',
           published: '2023',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 2,
           title: 'Livro 2',
           author: 'Autor 2',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 3,
           title: 'Livro 3',
           author: 'Autor 3',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 4,
           title: 'Livro 4',
           author: 'Autor 4',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 5,
           title: 'Livro 5',
           author: 'Autor 5',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 5,
           title: 'Livro 5',
           author: 'Autor 5',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         },
         {
           id: 5,
           title: 'Livro 5',
           author: 'Autor 5',
           published: '2022',
-          cover: 'src/assets/260620.jpg'
+          cover: 'src/assets/livro.png'
         }
         // Adicione mais livros aqui
       ]

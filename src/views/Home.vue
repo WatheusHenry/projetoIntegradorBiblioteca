@@ -1,7 +1,6 @@
 <template>
   <div class="">
-    <div class="m-auto text-center py-3 w-[60%]">
-      <h1 class="text-3xl font-bold mb-5 text-green-600">Biblioteca</h1>
+    <div class="m-auto text-center py-5 w-[40%]">
       <h3 class="text-xl font-bold text-slate-700">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet sapien luctus,
         viverra nunc at, gravida tortor. Phasellus non justo dignissim, auctor turpis eget,
@@ -12,11 +11,11 @@
       <h1 class="text-3xl font-bold text-green-600">Livros em Destaque</h1>
     </div>
 
-    <div class="m-auto grid grid-cols-3 w-[50%] py-3">
+    <div class="m-auto grid grid-cols-3 w-[70%] py-3 gap-5">
       <div class="inline-flex justify-center" v-for="book in books" :key="book.id">
         <div class="card" style="width: 15rem">
-          <img :src="book.cover" class="card-img-top" alt="..." />
-          <div class="card-body">
+          <div class="card-body m-auto text-center justify-center">
+            <img src="src\assets\livro.png" width="90" height="90" alt="" />
             <h2 class="text-3xl">{{ book.title }}</h2>
             <p class="card-text">
               {{ book.author }}

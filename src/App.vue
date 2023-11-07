@@ -7,9 +7,8 @@
             alt="Vue logo"
             class="logo flex"
             src="@/assets/livro.png"
-            width="80"
-            height="80"
-            clas
+            width="50"
+            height="70"
           />
 
           <h1 class="flex text-5xl">BiBlioteca</h1>
@@ -38,9 +37,7 @@
     <main>
       <RouterView />
     </main>
-    <footer class="bottom-0 w-full h-20 bg-slate-700 mt-5">
-      dasdsa
-    </footer>
+    <footer class="bottom-0 w-full h-20 bg-slate-700 mt-5">dasdsa</footer>
   </div>
 </template>
 
