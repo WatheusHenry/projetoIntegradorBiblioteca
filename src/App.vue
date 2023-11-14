@@ -27,6 +27,7 @@
           <nav class="bg-gray-700 rounded p-1 px-4 gap-5">
             <RouterLink class="px-5 p-1 rounded" to="/">Home</RouterLink>
             <RouterLink to="/livros" class="px-5 p-1 rounded">Livros</RouterLink>
+            <RouterLink to="/bibliotecaria" class="px-5 p-1 rounded">Bibliotecarias</RouterLink>
             <RouterLink to="/alugar" class="px-5 p-1 rounded">Alugar</RouterLink>
           </nav>
         </div>
@@ -37,7 +38,6 @@
     <main>
       <RouterView />
     </main>
-    <footer class="bottom-0 w-full h-20 bg-slate-700 mt-5">dasdsa</footer>
   </div>
 </template>
 
