@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="">
     <div class="m-auto text-center py-5 w-[40%]">
