@@ -29,6 +29,9 @@
             <RouterLink to="/livros" class="px-5 p-1 rounded">Livros</RouterLink>
             <RouterLink to="/bibliotecaria" class="px-5 p-1 rounded">Bibliotecarias</RouterLink>
             <RouterLink to="/alugar" class="px-5 p-1 rounded">Alugar</RouterLink>
+            <RouterLink to="/login" class="px-5 p-1 rounded">Login</RouterLink>
+            <RouterLink to="/registro" class="px-5 p-1 rounded">Registro</RouterLink>
+
           </nav>
         </div>
       </div>
